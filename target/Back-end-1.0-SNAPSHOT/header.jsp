@@ -51,7 +51,7 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-7 col-lg-2">
                     <div class="logo">
-                        <a href="index.jsp">
+                        <a href="XuLySanPham">
                             <img src="images/logo/logo.png" alt="logo images">
                         </a>
                     </div>
@@ -76,34 +76,17 @@
                                 </div>
                             </li>
 
-                            <li class="drop"><a href="#">Pages</a>
-                                <div class="megamenu dropdown">
-                                    <ul class="item item01">
-                                        <li><a href="about.jsp">Về chúng tôi</a></li>
 
-                                        <li><a href="blog">Blog</a></li>
-                                        <li><a href="CartController">Cart Page</a></li>
-                                        <li><a href="checkout.html">Checkout Page</a></li>
-                                        <li><a href="wishlist.html">Wishlist Page</a></li>
-                                        <li><a href="error404.html">404 Page</a></li>
-                                        <li><a href="faq.jsp">Câu hỏi thường gặp</a></li>
-<%--                                        <li><a href="team.html">Team Page</a></li>--%>
-                                    </ul>
-                                </div>
-                            </li>
 
-                            <li><a href="ContactUsServlet">Liên hệ</a></li>
-                            <li><a href="blog">Blog</a></li>
+
                         </ul>
                     </nav>
                 </div>
 
                 <div class="col-md-8 col-sm-8 col-5 col-lg-2">
                     <ul class="header__sidebar__right d-flex justify-content-end align-items-center">
-                        <li class="shop_search"><a class="search__active" href="#"></a></li>
-                        <li class="wishlist"><a href="CartController"></a></li>
-                        <li class="shopcart"><a class="cartbox_active" href=""><span class="product_qun">3</span></a>
-
+                        <li class="shop_search"><a class="search__active" href="SearchControl"></a></li>
+                        <li class="shopcart"><a class="cartbox_active" href="cartController"><span class="product_qun">3</span></a>
                             <div class="block-minicart minicart__active">
 
                             </div>
@@ -123,9 +106,9 @@
                                             <div class="switcher-currency-trigger">
                                                 <div class="setting__menu">
                                                     <!--<span><a href="#">Compare Product</a></span>-->
-                                                    <c:if test="${sessionScope.user!=null}">
-                                                    <span><a href="thongtincanhan.jsp">Quản Lý tài khoản</a></span>
-                                                    <span><a href="CartController">Giỏ Hàng của cậu</a></span>
+                                                    <                                                    <c:if test="${sessionScope.user!=null}">
+
+                                                    <span><a href="cartController">Giỏ Hàng của cậu</a></span>
                                                     </c:if>
                                                     <c:if test="${sessionScope.user==null}">
                                                     <span><a href="login.jsp">Đăng Nhập</a></span>
@@ -151,33 +134,19 @@
                     <nav class="mobilemenu__nav">
                         <ul class="meninmenu">
                             <li><a href="XuLySanPham">Home</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul>
-                                    <li><a href="about.jsp">Thông tin trang web</a></li>
+                            <li><a href="faq.jsp">Pages</a>
 
-                                    </li>
-                                    <li><a href="thongtincanhan.jsp">My Account</a></li>
-                                    <li><a href="cart.html">Cart Page</a></li>
-                                    <li><a href="checkout.html">Checkout Page</a></li>
-                                    <li><a href="wishlist.html">Wishlist Page</a></li>
-                                    <li><a href="error404.html">404 Page</a></li>
-                                    <li><a href="faq.jsp">Câu hỏi thường gặp</a></li>
-<%--                                    <li><a href="team.html">Team Page</a></li>--%>
-                                </ul>
                             </li>
                             <li><a href="XuLySanPham">Shop</a>
                                 <ul>
                                     <li><a href="XuLySanPham">Shop Grid</a></li>
-                                    <li><a href="single-product.html">Single Product</a></li>
+
                                 </ul>
                             </li>
-                            <li><a href="blog">Review Sách Hay </a>
-                                <ul>
-                                    <li><a href="blog">Blog Page</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                </ul>
+
+
                             </li>
-                            <li><a href="ContactUsServlet">Contact</a></li>
+
                         </ul>
                     </nav>
                 </div>

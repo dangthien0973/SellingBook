@@ -41,7 +41,7 @@ public class LoginAccount extends HttpServlet {
                     response.sendRedirect("XuLySanPham");
                 } else {
                     if (currentUser.getRole().equals("admin")) {
-                        response.sendRedirect("XuLySanPham");
+                        response.sendRedirect("Ad_index.jsp");
                     }
                 }
             } else {

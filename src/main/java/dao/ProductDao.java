@@ -354,6 +354,71 @@ public ArrayList<Product> loadProductCategory(int index,String category) throws 
         return 0;
     }
 
+    public void editProduct( String name, int categoryId, int price, String img, String description, int pid) throws Exception {
+
+
+        try {
+            ProductDao dao = new ProductDao();
+
+            pstmt = conn.prepareStatement("UPDATE product SET name = ?, price = ?, CategoryId =?, description =  ? , img = ? WHERE id = ?  ");
+
+
+            pstmt.setString(1, name);
+            pstmt.setInt(2,price);
+            pstmt.setInt(3, categoryId);
+            pstmt.setString(4, description);
+            pstmt.setString(5, img);
+            pstmt.setInt(6, pid);
+
+
+            pstmt.executeUpdate();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+    }
+    // them san pham tu admin
+    public void insertProduct(String name, int categoryId, int price, String img, String description) throws Exception {
+
+
+        try {
+            ProductDao dao = new ProductDao();
+
+            pstmt = conn.prepareStatement("INSERT INTO product ( name, price, CategoryId, description, img) VALUES (?,?,?,?,?)  ");
+
+
+            pstmt.setString(1, name);
+            pstmt.setInt(2,price);
+            pstmt.setInt(3, categoryId);
+
+            pstmt.setString(4, description);
+            pstmt.setString(5, img);
+
+
+            pstmt.executeUpdate();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+    }
+    public void deleteProduct(String pid) throws Exception {
+
+        try {
+            pstmt = conn.prepareStatement("DELETE FROM product WHERE id like ?");
+            pstmt.setString(1, pid);
+            pstmt.executeUpdate();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
         public static void main(String[] args)  throws  Exception{
 
         ProductDao productDao=new ProductDao();

@@ -1,0 +1,57 @@
+.sub-main-w3{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.form-style-agile{
+    margin-bottom: 1rem;
+    
+    padding: 0 1.25rem;;
+    border: 0;
+    font-size: 100%;
+}
+.sidebar-mini .wrapper .sub-main-w3 .form-style-agile label{
+    font-size: 18px;
+    font-weight: 510;
+    
+
+} 
+.sidebar-mini .wrapper .sub-main-w3 .form-style-agile input, select {
+    padding: 5px 15px;
+    background: transparent;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: none;
+    border: 2px solid #6c757d;
+    border-radius: 3px;
+}
+.sidebar-mini .wrapper .sub-main-w3 .card-footer {
+    margin-top: 80px ;
+    background-color: white;
+    padding: 0;
+
+}
+.chinhsua{
+    
+    float: left;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+
+}
+.sua1{
+    float: right;
+}
+.card-primary .sub-main-w3 .form-style-agile .ten{
+    padding: 10px;
+    font-size: 17px;
+    margin-left: -50%;
+}
+.content-wrapper .content .card-primary .sub-main-w3 .form-style-agile .box{
+    
+    margin-left: -48%;
+
+}
+
+
